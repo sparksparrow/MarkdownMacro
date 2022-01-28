@@ -12,7 +12,7 @@
     
     <groupId>com.atlassian.plugins.confluence.markdown</groupId>
     <artifactId>confluence-markdown-macro</artifactId>
-    <version>1.6.9</version>
+    <version>1.6.11</version>
     
     <organization>
         <name>Atlas Authority</name>
@@ -125,7 +125,7 @@
          <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.10.3</version>
+            <version>2.12.6</version>
         </dependency>
         
         <dependency>
@@ -137,7 +137,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>2.10.3</version>
+            <version>2.12.6</version>
         </dependency>
         
         <!-- WIRED TEST RUNNER DEPENDENCIES -->
@@ -248,6 +248,12 @@
                 </configuration>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
     </build>
     <properties>
         <java.source.version>1.8</java.source.version>
